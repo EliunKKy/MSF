@@ -47,11 +47,11 @@ print("90% da Vel Terminal: " + str(vx[-1]*0.9))
 
 print("Atinge 90% vt aos: ", end="")
 for i in range(vx.size-1):
-    if(vx[i] == vx[-1]*0.9): ##Quando vx == 90% v terminal
+    if(vx[i] == vx[-1]*0.9): #Quando vx == 90% v terminal
         print(t[np.where(vx == vx[i])])
         break;
-    elif(vx[i] > vx[-1]*0.9): ##Vai buscar o primeiro valor acima de 90% da vterminal
-                              ## pega nele e faz media com o anterior
+    elif(vx[i] > vx[-1]*0.9): #Vai buscar o primeiro valor acima de 90% da vterminal
+                              # pega nele e faz media com o anterior
         t1 = t[np.where(vx == vx[i])]
         t2 = t[np.where(vx == vx[i-1])]
         tmed = (t1+t2)/2
@@ -61,10 +61,10 @@ for i in range(vx.size-1):
 
 print("Tempo que demora a percorrer 2km: ", end="")
 for i in range(x.size-1):
-    if(x[i] == 2000): ##Quando vx == 90% v terminal
+    if(x[i] == 2000): #Quando vx == 90% v terminal
         print(t[np.where(x == x[i])])
         break;
-    elif(x[i] > 2000): ##Vai buscar o primeiro valor acima de 90% da vterminal
+    elif(x[i] > 2000): #Vai buscar o primeiro valor acima de 90% da vterminal
                               ## pega nele e faz media com o anterior
         t1 = t[np.where(x == x[i])]
         t2 = t[np.where(x == x[i-1])]
