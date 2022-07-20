@@ -16,12 +16,13 @@ ax = np.zeros(t.size)
 vx = np.zeros(t.size)
 x = np.zeros(t.size)
 
-Cyu = 0.004
+Cyu = 0.1
 Cres = 0.9
-area = 0.3
+area = 2.34
 Par = 1.225
-m = 75
-Potencia = 298.28
+m = 1500
+cv = 283
+Potencia = cv*735.4975
 vx[0] = 1
 g = 9.8
 
@@ -41,9 +42,14 @@ x = x[:i]
 ax = ax[:i]
 vx = vx[:i]
 
+h = 3*3600
+ponto = x[h]
+velocidade = vx[h]
+
 xinverted = x[-1:-50:-1]
 plt.plot(t,x, label="pos")
 
 plt.plot(t,vx, label="velocity")
+plt.legend()
 print(t[-1])
 plt.grid()

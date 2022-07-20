@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['Teóricas\\TP_14_06_22_b).py', 'Teóricas\\TP_14_06_22.py']
+recent_files = ['Práticas\\MSF-master\\AlexandreCotorobai 107849 - 3teste\\2a.py']
 
 [main]
 version = 0.2.0
