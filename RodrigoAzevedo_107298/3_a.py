@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon May 23 17:37:00 2022
+Created on Wed Jul 20 16:42:43 2022
 
-@author: Alexandre
+@author: rodri
 """
 
 import matplotlib.pyplot as plt
@@ -16,9 +16,9 @@ ax = np.zeros(t.size)
 vx = np.zeros(t.size)
 x = np.zeros(t.size)
 
-Cyu = 0.1
+Cyu = 0.001
 Cres = 0.9
-area = 2.34
+area = 15.2256
 Par = 1.225
 m = 200000
 Potencia = 7000000 
@@ -51,3 +51,6 @@ plt.plot(x,t, label="pos")
 plt.plot(t,vx, label="velocity")
 plt.legend()
 plt.grid()
+
+
+Vt = 0.5 * Cyu * area * vx[0]**2 * Par

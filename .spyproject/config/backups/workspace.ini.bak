@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['Práticas\\MSF-master\\AlexandreCotorobai 107849 - 3teste\\2a.py']
+recent_files = ['Git_Alex\\MSF-master\\P12\\10.py', 'Git_Alex\\MSF-master\\P12\\10bernardo.py', 'Git_Alex\\MSF-master\\P11\\7ab.py', 'Git_Alex\\MSF-master\\P10\\6.py', 'Git_Alex\\MSF-master\\P9\\12.py']
 
 [main]
 version = 0.2.0
